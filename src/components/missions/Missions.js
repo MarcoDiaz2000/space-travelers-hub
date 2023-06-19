@@ -14,7 +14,7 @@ const Missions = () => {
   return (
     <div>
       <h1>Missions</h1>
-      <table>
+      <table className="mission-table">
         <thead>
           <tr>
             <th>Missions</th>
