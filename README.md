@@ -24,15 +24,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Bookstore] <a name="about-project"></a>
+# 📖 [Space Travelers' Hub] <a name="about-project"></a>
 
 **[Description]**
 
-I created an simplified version of it that allows you to:
-
-Display a list of books
-Add a book
-Remove a selected book
+In this project, we worked with real data from the SpaceX API. The project consisted of creating a web application for a company that offers commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,15 +40,17 @@ HTML, CSS & JAVASCRIPT
 
 GitHub & Visual Studio Code
 
-React
+React and Redux
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- Display a list of books
-- Add a book
-- Remove a selected book
+- Use CreateAsyncThunk in Redux.
+- Fetch datas from a database with Redux
+- Conditional rendering in React
+- Filtering out selected items to another screen
+- Single Page App
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,7 +58,7 @@ React
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://marcodiaz2000.github.io/bookstore/)
+- [Live Demo Link](https://marcodiaz2000.github.io/space-travelers-hub/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,7 +92,7 @@ Example commands:
 
 ```sh
   cd todo-list
-  git clone https://github.com/MarcoDiaz2000/bookstore.git
+  git clone https://github.com/MarcoDiaz2000/space-travelers-hub
 
 ```
 
@@ -157,6 +155,11 @@ You can deploy this project using:
 - GitHub: [@MarcoDiaz](https://github.com/MarcoDiaz2000)
 - Twitter: [@MarcoDiaz](https://twitter.com/MarcoDi70620847)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/marco-diaz-0876a7268/)
+
+👤 **Narcisse Jemba** 
+- GitHub: [@githubhandle](https://github.com/jojo987N)
+- Twitter: [@JembaNarcisse](https://twitter.com/JembaNarcisse)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/narcisse-jemba-aa9488252/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
