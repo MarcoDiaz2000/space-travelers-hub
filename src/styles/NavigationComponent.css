@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: rgba(218, 206, 206, 0);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 8rem;
+}
+
+.logo {
+  height: 80px;
+}
+
+.nav-link {
+  width: 7rem;
+  height: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #878787;
+}
+
+.nav-link.active {
+  color: #000;
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.login-link {
+  color: inherit;
+}
+
+.nav-icon {
+  color: blue;
+  font-size: 24px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.logo-name {
+  width: 25rem;
+  height: 2.313rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #007bff;
+  text-align: center;
+  text-decoration: none;
+}
