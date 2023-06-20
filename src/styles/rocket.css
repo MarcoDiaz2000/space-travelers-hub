@@ -1,18 +1,22 @@
-.container{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    /* gap: 10px; */
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+  /* gap: 10px; */
 }
-.container-img{
-    /* width: 20%; */
-    margin: 10px;
+
+.container-img {
+  /* width: 20%; */
+  margin: 10px;
 }
-.container-img img{
-    width: 100%;
+
+.container-img img {
+  width: 100%;
 }
-.button{
-    background: #007bff;
-    padding: 5px 15px;
-    border-radius: 5px;
-    color: white;
+
+.button {
+  background: #007bff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
 }

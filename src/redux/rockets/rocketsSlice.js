@@ -5,7 +5,6 @@ const ROCKETS_URL = 'https://api.spacexdata.com/v4/rockets';
 export const getRockets = createAsyncThunk('rockets/getRockets', async (arg, { rejectWithValue }) => {
   try {
     const data = await axios.get(ROCKETS_URL);
-    console.log(data.data);
     return data.data.map((x) => ({
       id: x.id,
       name: x.name,
@@ -35,7 +34,6 @@ export const rocketsSlice = createSlice({
       })
       .addCase(getRockets.fulfilled, (state, action) => {
         state.isLoading = false;
-        console.log(action.payload);
         state.data = action.payload;
       })
       .addCase(getRockets.rejected, (state, action) => {
