@@ -20,14 +20,28 @@ const Mission = ({ mission }) => {
       <td className="col1">{mission.missionName}</td>
       <td className="col2">{mission.description}</td>
       <td className="col3">
-        <button type="button" className={`membership-button ${mission.reserved ? 'active' : ''}`}>
-          {mission.reserved ? 'Active Member' : 'Not a Member'}
+        {mission.reserved && (
+        <button type="button" className="membership-button active">
+          Active Member
         </button>
+        )}
+        {!mission.reserved && (
+        <button type="button" className="membership-button">
+          Not a Member
+        </button>
+        )}
       </td>
       <td className="col4">
-        <button type="button" onClick={handleClick} className={`join-button ${mission.reserved ? 'active' : ''}`}>
-          {mission.reserved ? 'Leave Mission' : 'Join Mission'}
+        {mission.reserved && (
+        <button type="button" onClick={handleClick} className="join-button active">
+          Leave Mission
         </button>
+        )}
+        {!mission.reserved && (
+        <button type="button" onClick={handleClick} className="join-button">
+          Join Mission
+        </button>
+        )}
       </td>
     </tr>
   );
