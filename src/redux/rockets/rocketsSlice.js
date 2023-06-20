@@ -10,6 +10,7 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async (arg, { r
       name: x.name,
       type: x.type,
       flickr_images: x.flickr_images,
+      description: x.description,
     }));
   } catch (error) {
     return rejectWithValue(error);
@@ -33,7 +34,6 @@ export const rocketsSlice = createSlice({
       })
       .addCase(getRockets.fulfilled, (state, action) => {
         state.isLoading = false;
-        console.log(action.payload);
         state.data = action.payload;
       })
       .addCase(getRockets.rejected, (state, action) => {
