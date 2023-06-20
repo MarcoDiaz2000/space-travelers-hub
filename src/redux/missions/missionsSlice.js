@@ -15,18 +15,18 @@ const missionsSlice = createSlice({
   name: 'missions',
   initialState: [],
   reducers: {
-    joinMission: (state, action) => {
-      const mission = state.find((mission) => mission.missionId === action.payload);
-      if (mission) {
-        mission.reserved = true;
+    joinMission: (state, action) => state.map((mission) => {
+      if (mission.missionId === action.payload) {
+        return { ...mission, reserved: true };
       }
-    },
-    leaveMission: (state, action) => {
-      const mission = state.find((mission) => mission.missionId === action.payload);
-      if (mission) {
-        mission.reserved = false;
+      return mission;
+    }),
+    leaveMission: (state, action) => state.map((mission) => {
+      if (mission.missionId === action.payload) {
+        return { ...mission, reserved: false };
       }
-    },
+      return mission;
+    }),
   },
   extraReducers: (builder) => {
     builder.addCase(fetchMissions.fulfilled, (state, action) => action.payload);
