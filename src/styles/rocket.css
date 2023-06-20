@@ -20,3 +20,14 @@
   border-radius: 5px;
   color: white;
 }
+.status{
+  float: left;
+  margin-right: 10px;
+  padding: 3px 8px;
+  font-weight: bold;
+  background:  #3396ff;
+}
+.button1 {
+  background: white;
+  color: black;
+}
