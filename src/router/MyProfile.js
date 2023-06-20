@@ -1,8 +1,8 @@
-import React from 'react';
+import MyProfileComponent from '../components/myprofile/MyProfile';
 
 const MyProfile = () => (
   <div>
-    <h1>MyProfile</h1>
+    <MyProfileComponent />
   </div>
 );
 

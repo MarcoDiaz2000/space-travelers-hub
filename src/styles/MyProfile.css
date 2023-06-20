@@ -1,0 +1,29 @@
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 5%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.profile-table th,
+.profile-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+.profile-table .col1 {
+  font-size: 20px;
+}
