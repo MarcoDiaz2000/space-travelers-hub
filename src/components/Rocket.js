@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import '../styles/rocket.css';
-import { reserveRocket } from '../redux/rockets/rocketsSlice';
+import { cancelRocket, reserveRocket } from '../redux/rockets/rocketsSlice';
 
 export default function Rocket({ item }) {
   const {
@@ -8,7 +8,7 @@ export default function Rocket({ item }) {
   } = item;
   const dispatch = useDispatch();
   const handleClick = () => {
-    dispatch(reserveRocket(item.id));
+    if (reserved) { dispatch(cancelRocket(item.id)); } else dispatch(reserveRocket(item.id));
   };
   return (
     <div className="container">
