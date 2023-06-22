@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+  /* gap: 10px; */
+}
+
+.container-img {
+  /* width: 20%; */
+  margin: 10px;
+}
+
+.container-img img {
+  width: 100%;
+}
+
+.button {
+  background: #007bff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+.status {
+  float: left;
+  margin-right: 10px;
+  padding: 3px 8px;
+  font-weight: bold;
+  background: #3396ff;
+}
+
+.button1 {
+  background: white;
+  color: black;
+}
