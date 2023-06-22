@@ -33,10 +33,12 @@
   background: white;
   color: black;
 }
-.style{
+
+.style {
   border: 1px solid hsl(0, 0%, 85%);
 }
-.style h1{
+
+.style h1 {
   font-size: 20px;
   padding: 10px;
 }
