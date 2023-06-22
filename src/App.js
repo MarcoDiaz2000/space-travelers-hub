@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   BrowserRouter as Router, Routes, Route, Navigate,
 } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import NavigationComponent from './components/NavigationComponent';
 import './styles/App.css';
 import Rockets from './router/Rockets';
 import Missions from './router/Missions';
 import MyProfile from './router/MyProfile';
+import { getRockets } from './redux/rockets/rocketsSlice';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getRockets());
+  }, [dispatch]);
   return (
     <Router>
       <NavigationComponent />
