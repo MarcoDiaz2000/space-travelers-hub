@@ -10,20 +10,21 @@ const NavigationBar = () => (
         <img src={logo} className="logo" alt="logo" />
         Space Travelers Hub
       </NavLink>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/" className="nav-link">Rockets</NavLink>
-          </li>
-          <li>
-            <NavLink to="/missions" className="nav-link">Missions</NavLink>
-          </li>
-          <li>
-            <NavLink to="/myprofile" className="nav-link">My Profile</NavLink>
-          </li>
-        </ul>
-      </nav>
     </div>
+    <nav className="navbar-right">
+      <ul>
+        <li>
+          <NavLink to="/" className="nav-link">Rockets</NavLink>
+        </li>
+        <li>
+          <NavLink to="/missions" className="nav-link">Missions</NavLink>
+          <span className="separator">|</span>
+        </li>
+        <li>
+          <NavLink to="/myprofile" className="nav-link">My Profile</NavLink>
+        </li>
+      </ul>
+    </nav>
   </div>
 );
 
