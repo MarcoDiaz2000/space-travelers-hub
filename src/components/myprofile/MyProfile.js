@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import '../../styles/MyProfile.css';
+import RocketsReserved from '../RocketsReserved';
 
 const MyProfile = () => {
   const missions = useSelector((state) => state.missions.filter((mission) => mission.reserved));
@@ -24,15 +25,7 @@ const MyProfile = () => {
         </div>
         <div className="column">
           <h2>Rockets</h2>
-          <table className="profile-table">
-            <tbody>
-              <tr>
-                <td className="col1">
-                  Rocket 1
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <RocketsReserved />
         </div>
       </div>
     </div>
