@@ -1,0 +1,55 @@
+.mission-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mission-table th,
+.mission-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+.mission-table th {
+  background-color: #fff;
+}
+
+.mission-table tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.mission-table .col1 {
+  width: 15%;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.mission-table .col2 {
+  width: 60%;
+}
+
+.mission-table .col3,
+.mission-table .col4 {
+  width: 13%;
+}
+
+.membership-button {
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
+.membership-button.active {
+  background-color: blue;
+}
+
+.join-button {
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.join-button.active {
+  color: red;
+  border: 1px solid red;
+}

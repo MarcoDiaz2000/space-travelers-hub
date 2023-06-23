@@ -1,8 +1,8 @@
-import React from 'react';
+import MissionsComponent from '../components/missions/Missions';
 
 const Missions = () => (
   <div>
-    <h1>Missions</h1>
+    <MissionsComponent />
   </div>
 );
 

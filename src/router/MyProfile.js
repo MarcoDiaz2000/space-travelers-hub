@@ -1,9 +1,8 @@
-import React from 'react';
-import RocketsReserved from '../components/RocketsReserved';
+import MyProfileComponent from '../components/myprofile/MyProfile';
 
 const MyProfile = () => (
   <div>
-    <RocketsReserved />
+    <MyProfileComponent />
   </div>
 );
 
